@@ -25,3 +25,11 @@ export enum Brand {
     Stash = "Stash",
     Twinings = "Twinings",
 }
+
+export type Filters = {
+    type: TeaType | undefined,
+    brand: Brand | undefined,
+    caffeine: number | undefined,
+    sealed: boolean | undefined,
+    searchTerm: string | undefined
+}

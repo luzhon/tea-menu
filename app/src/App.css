@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-header {
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -13,15 +10,8 @@
   color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.AppHeader {
+  font-size: 28px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
