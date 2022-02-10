@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tea-menu/static/css/main.693765fe.css",
+    "main.js": "/tea-menu/static/js/main.570ef2db.js",
+    "static/js/787.c1112931.chunk.js": "/tea-menu/static/js/787.c1112931.chunk.js",
+    "index.html": "/tea-menu/index.html",
+    "main.693765fe.css.map": "/tea-menu/static/css/main.693765fe.css.map",
+    "main.570ef2db.js.map": "/tea-menu/static/js/main.570ef2db.js.map",
+    "787.c1112931.chunk.js.map": "/tea-menu/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.693765fe.css",
+    "static/js/main.570ef2db.js"
+  ]
+}
