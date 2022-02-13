@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { WholeDarnApp } from "./WholeDarnApp"
+import { WholeDarnApp } from "./components/WholeDarnApp"
 
 
 function App() {

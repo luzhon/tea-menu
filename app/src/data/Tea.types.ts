@@ -1,0 +1,44 @@
+export type Tea = {
+  img: string
+  name: string
+  brand: Brand
+  type: TeaType[]
+  ingredients: string
+  caffeine: number
+  sealed: boolean
+}
+
+export enum TeaType {
+  Black = 'Black',
+  Green = 'Green',
+  Herbal = 'Herbal',
+  Oolong = 'Oolong',
+  Rooibos = 'Rooibos',
+  Puer = 'Puer',
+  White = 'White',
+}
+
+export enum Brand {
+  DavidsTea = 'DavidsTea',
+  Steepologie = 'Steepologie',
+  CelestialSeasonings = 'Celestial Seasonings',
+  Stash = 'Stash',
+  Twinings = 'Twining\'s',
+  TheRepublicOfTea = 'The Republic of Tea',
+  OrientalTeaRhyme = 'Oriental Tea Rhyme',
+  TheTaoOfTea = 'The Tao of Tea',
+  TraderJoes = 'Trader Joes',
+  HawaiianIslands = 'Hawaiian Islands Tea Company',
+  Tazo = 'Tazo',
+  Bigelow = 'Bigelow',
+  Itoen = 'Ito En',
+  QueenMary = 'Queen Mary'
+}
+
+export type Filters = {
+  type?: TeaType | undefined
+  brand?: Brand | undefined
+  caffeine?: number | undefined
+  sealed?: boolean | undefined
+  searchTerm?: string | undefined
+}
