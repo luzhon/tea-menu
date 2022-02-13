@@ -22,36 +22,28 @@ const style = {
   borderRadius: '5px'
 };
 
-export default function FilterModal(props: { onSave: (filters: Filters) => void }) {
-  const [type, setType] = React.useState<TeaType | undefined>(undefined);
-  const [brand, setBrand] = React.useState<Brand | undefined>(undefined);
-  const [caffeine, setCaffeine] = React.useState<number | undefined>(undefined);
-  const [sealed, setSealed] = React.useState<boolean | undefined>(undefined);
+export default function FilterModal(props: { filters: Filters, onChange: (filters: Filters) => void }) {
 
   const handleTypeChange = (event: SelectChangeEvent) => {
-    setType(event.target.value as TeaType);
+    const newType = event.target.value as TeaType;
+    props.onChange({ ...props.filters, type: newType })
   };
 
   const handleBrandChange = (event: SelectChangeEvent) => {
-    setBrand(event.target.value as Brand);
+    const newBrand = event.target.value as Brand;
+    props.onChange({ ...props.filters, brand: newBrand })
   };
 
   const handleCaffeineChange = (event: SelectChangeEvent) => {
-    setCaffeine(event.target.value as unknown as number);
+    const newCaffeine = event.target.value as unknown as number;
+    props.onChange({ ...props.filters, caffeine: newCaffeine })
   };
 
   const handleSealedChange = (event: SelectChangeEvent) => {
-    setSealed(event.target.value === "true");
-  };
+    const newSealed = event.target.value === "true";
+    props.onChange({ ...props.filters, sealed: newSealed })
 
-  const handleSave = () => {
-    props.onSave({
-      type,
-      brand,
-      caffeine,
-      sealed
-    })
-  }
+  };
 
   return (
     <>
@@ -61,7 +53,7 @@ export default function FilterModal(props: { onSave: (filters: Filters) => void 
           <Select
             labelId="teatype-label"
             id="teatype"
-            value={type}
+            value={props.filters.type}
             label="Tea Type"
             onChange={handleTypeChange}
           >
@@ -76,7 +68,7 @@ export default function FilterModal(props: { onSave: (filters: Filters) => void 
           <Select
             labelId="brand-label"
             id="brand"
-            value={brand}
+            value={props.filters.brand}
             label="Brand"
             onChange={handleBrandChange}
           >
@@ -91,7 +83,7 @@ export default function FilterModal(props: { onSave: (filters: Filters) => void 
           <Select
             labelId="caffeine-label"
             id="caffeine"
-            value={caffeine?.toString()}
+            value={props.filters.caffeine?.toString()}
             label="caffeine"
             onChange={handleCaffeineChange}
           >
@@ -107,7 +99,7 @@ export default function FilterModal(props: { onSave: (filters: Filters) => void 
           <Select
             labelId="sealed-label"
             id="sealed"
-            value={sealed?.toString()}
+            value={props.filters.sealed?.toString()}
             label="Sealed"
             onChange={handleSealedChange}
           >
@@ -116,9 +108,6 @@ export default function FilterModal(props: { onSave: (filters: Filters) => void 
             <MenuItem value={"false"}>{"Opened"}</MenuItem>
           </Select>
         </FormControl>
-        <IconButton onClick={handleSave} sx={{ position: "absolute", right: "22px", bottom: "10px" }}>
-          <ArrowForwardIcon />
-        </IconButton>
       </Box>
     </>
   );

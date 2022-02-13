@@ -8,14 +8,43 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.HeaderBackground {
+  background-color: #78AF94;
+  width: calc(100% + 50px);
+  height: 150px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.Background {
+  z-index: 1;
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .AppHeader {
-  font-size: 28px;
+  font-size: 32px;
   margin-top: 20px;
+  color: white;
+  font-family: 'Monoton', cursive;
 }
 
 .TeaHeader {
   font-size: 20px;
   font-weight: 'bold';
+}
+
+.HeaderBar {
+  margin-top: -25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

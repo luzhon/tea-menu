@@ -1,20 +1,29 @@
 import React from 'react';
 import TeaList from './TeaList'
 import HeaderBar from './HeaderBar'
+import { TeaoftheDay } from './TeaoftheDay';
 import { Filters } from '../data/Tea.types'
+import { flexbox } from '@mui/system';
 
 
 export function WholeDarnApp() {
-  const [filters, setFilters] = React.useState<Filters | undefined>(undefined);
+  const [filters, setFilters] = React.useState<Filters>({});
 
   return (
     <>
-      <header className="AppHeader">Lulu's Tea Obsession</header>
-      <HeaderBar onChange={(filters: Filters | undefined) => {
-        setFilters(filters)
-      }
-      } />
-      <TeaList filters={filters} />
+      <div className="HeaderBackground">
+        <header className="AppHeader">LULU'S TEA <br /> OBSESSION</header>
+      </div>
+      <div className="Background">
+        <div className="HeaderBar">
+          <HeaderBar filters={filters} onChange={(filters: Filters) => {
+            setFilters(filters)
+          }
+          } />
+        </div>
+        <TeaoftheDay />
+        <TeaList filters={filters} />
+      </div>
     </>
   );
 }

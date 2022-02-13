@@ -10,29 +10,24 @@ import FilterModal from './FilterModal';
 import { Filters } from '../data/Tea.types';
 
 
-export default function HeaderBar(props: { onChange: (filters: Filters | undefined) => void }) {
+export default function HeaderBar(props: { filters: Filters, onChange: (filters: Filters) => void }) {
   const [open, setOpen] = React.useState(false);
-  const [filters, setFilters] = React.useState<Filters | undefined>(undefined);
-  const [searchTerm, setSearchTerm] = React.useState<string | undefined>(undefined);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const handleSave = (newFilters: Filters) => {
-    setOpen(false);
-    const updatedFilters = { ...newFilters, searchTerm: searchTerm }
-    setFilters(updatedFilters);
-    handleSearchExecute(updatedFilters);
-  }
   const handleSearch = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
-    setSearchTerm(event.target.value as string);
-  };
-  const handleSearchExecute = (newFilters?: Filters) => {
-    const newestFilters = newFilters ? newFilters : {
-      ...filters,
+    const searchTerm = event.target.value as string;
+    props.onChange({
+      ...props.filters,
       searchTerm: searchTerm
-    }
-    props.onChange(newestFilters)
+    })
   };
+
+  const handleChange = (newFilters: Filters) => {
+    props.onChange({
+      ...newFilters
+    })
+  }
 
   return (
     <>
@@ -45,17 +40,14 @@ export default function HeaderBar(props: { onChange: (filters: Filters | undefin
         <InputBase
           sx={{ ml: 1, flex: 1 }}
           placeholder="Search name or ingredient"
-          value={searchTerm}
+          value={props.filters.searchTerm}
           onChange={handleSearch}
         />
-        <IconButton type="submit" sx={{ p: '10px' }} onClick={() => { handleSearchExecute(); }}>
-          <SearchIcon />
-        </IconButton>
       </Paper>
       <Modal
         open={open}
         onClose={handleClose}>
-        <FilterModal onSave={handleSave} />
+        <FilterModal filters={props.filters} onChange={handleChange} />
       </Modal>
     </>
   );
