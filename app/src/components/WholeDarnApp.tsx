@@ -3,7 +3,6 @@ import TeaList from './TeaList'
 import HeaderBar from './HeaderBar'
 import { TeaoftheDay } from './TeaoftheDay';
 import { Filters } from '../data/Tea.types'
-import { flexbox } from '@mui/system';
 
 
 export function WholeDarnApp() {
