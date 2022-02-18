@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
   overflow-x: hidden;
@@ -14,10 +13,12 @@
 
 .HeaderBackground {
   background-color: #78AF94;
-  width: calc(100% + 50px);
-  height: 150px;
-  border-bottom-left-radius: 75px;
-  border-bottom-right-radius: 75px;
+  width: 100%;
+  height: 140px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  position: absolute;
+  top: 0;
 }
 
 .Background {
@@ -31,7 +32,7 @@
 
 .AppHeader {
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 15px;
   color: white;
   font-family: 'Monoton', cursive;
 }
@@ -42,9 +43,41 @@
 }
 
 .HeaderBar {
-  margin-top: -25px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 110px;
+}
+
+.TeaoftheDay {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.TeaoftheDayImage {
+  width: 100%;
+  background-color: transparent;
+  z-index: 0;
+  position: absolute;
+  bottom: -25px;
+}
+
+.HeaderAndList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.AppScrollable {
+  overflow-y: scroll;
+  position: relative;
 }

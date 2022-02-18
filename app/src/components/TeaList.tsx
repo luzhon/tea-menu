@@ -22,7 +22,7 @@ export default function TeaList(props: { filters?: Filters }) {
 
   return (
     <>
-      <ImageList sx={{ overflowX: 'hidden' }}>
+      <ImageList sx={{ overflowX: 'hidden', height: 'fit-content', marginTop: '180px' }}>
         {data.map((tea: Tea) => {
           if (passesFilters(props.filters, tea)) {
             return (

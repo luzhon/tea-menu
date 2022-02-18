@@ -2,7 +2,7 @@
 import * as React from 'react';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { Tea } from "../data/Tea.types";
+import { Tea, TeaTypeColor } from "../data/Tea.types";
 import Rating from '@mui/material/Rating';
 import Circle from '@mui/icons-material/Circle';
 import CircleOutlined from '@mui/icons-material/CircleOutlined';
@@ -32,16 +32,16 @@ export default function TeaItem(props: { tea: Tea }) {
 
     return (
         <>
-            <ImageListItem key={props.tea.img} onClick={() => handleTeaClick()} sx={{ width: '200px', height: '300px', alignItems: 'center', marginBottom: '15px' }}>
+            <ImageListItem key={props.tea.img} onClick={() => handleTeaClick()} sx={{ width: '200px', height: '300px', alignItems: 'center', marginBottom: '25px' }}>
                 <img
-                    style={{ width: "180px" }}
+                    style={{ width: "170px", clipPath: "circle(85px at center)" }}
                     src={`${props.tea.img}`}
                     alt={props.tea.name}
                     loading="lazy"
                 />
                 <ImageListItemBar
                     title={props.tea.name}
-                    subtitle={<span>{props.tea.type.join(', ')}</span>}
+                    //subtitle={<span>{props.tea.type.join(', ')}</span>}
                     position="below"
                 />
                 <Rating
@@ -50,10 +50,10 @@ export default function TeaItem(props: { tea: Tea }) {
                     disabled
                     max={3}
                     size={'small'}
-                    icon={<Circle fontSize="inherit" />}
-                    emptyIcon={<CircleOutlined fontSize="inherit" />}
+                    style={{ marginTop: "-5px" }}
+                    icon={<Circle style={{ color: TeaTypeColor[props.tea.type[0]] }} fontSize="inherit" />}
+                    emptyIcon={<CircleOutlined style={{ color: TeaTypeColor[props.tea.type[0]] }} fontSize="inherit" />}
                 />
-
             </ImageListItem>
             <Drawer
                 anchor={'bottom'}

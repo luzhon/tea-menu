@@ -18,6 +18,16 @@ export enum TeaType {
   White = 'White',
 }
 
+export enum TeaTypeColor {
+  Black = '#FA4A4A',
+  Green = '#78AF94',
+  Herbal = '#F5CD19',
+  Oolong = '#5DA8DA',
+  Rooibos = '#FF812C',
+  Puer = '#7B71C6',
+  White = 'lightgrey',
+}
+
 export enum Brand {
   DavidsTea = 'DavidsTea',
   Steepologie = 'Steepologie',
