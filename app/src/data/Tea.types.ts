@@ -42,7 +42,8 @@ export enum Brand {
   Tazo = 'Tazo',
   Bigelow = 'Bigelow',
   Itoen = 'Ito En',
-  QueenMary = 'Queen Mary'
+  QueenMary = 'Queen Mary',
+  NorthEarth = 'North Earth'
 }
 
 export type Filters = {

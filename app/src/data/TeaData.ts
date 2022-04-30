@@ -37,6 +37,10 @@ import sleighride from './../assets/sleighride.jpg'
 import vanillabean from './../assets/vanillabean.jpg'
 import vanillachai from './../assets/vanillachai.jpg'
 import whitepumpkin from './../assets/whitepumpkin.jpg'
+import butterfly from './../assets/butterfly.jpg'
+import peppermint from './../assets/peppermint.jpg'
+import guavacadabra from './../assets/guavacadabra.jpg'
+import cherryblossom from './../assets/cherryblossom.jpg'
 
 export const teaData: Tea[] = [
   {
@@ -77,7 +81,7 @@ export const teaData: Tea[] = [
     ingredients:
       'Apple (apple, citric acid), Candied pineapple (pineapple, sugar), Hibiscus blossoms, Candied papaya (papaya, sugar), Beetroot, Cinnamon, Artificial (cinnamon, almond, apple) flavouring, Raisins, Coconut rasps, Roasted almonds (almonds, sugar), Popped rice',
     caffeine: 0,
-    sealed: false,
+    sealed: true,
   },
   {
     img: hazelnutchocolate,
@@ -87,7 +91,7 @@ export const teaData: Tea[] = [
     ingredients:
       "Pu'erh tea, Apple, Cocoa peel, Artificial chocolate hazelnut flavouring, Chocolate (sugar, cocoa mass, low fat cocoa powder, cocoa butter, sunflower lecithin), Brittle pieces (sugar, hazelnut), Cocoa pieces, Hazelnut, Stevia extract",
     caffeine: 2,
-    sealed: true,
+    sealed: false,
   },
   {
     img: santassecret,
@@ -409,6 +413,46 @@ export const teaData: Tea[] = [
     ingredients:
       'Queens selected green tea,  pineapple cubes, apple cubes, flavoring, freeze-dried whole raspberries, freeze-dried raspberry pieces, pink cornflower blossoms',
     caffeine: 1,
+    sealed: false,
+  },
+  {
+    img: peppermint,
+    name: 'Peppermint Amour',
+    brand: Brand.DavidsTea,
+    type: [TeaType.Herbal],
+    ingredients:
+      'Organic peppermint leaves from Oregon and Washington State.',
+    caffeine: 0,
+    sealed: false,
+  },
+  {
+    img: butterfly,
+    name: 'Butterfly Pea Flower',
+    brand: Brand.NorthEarth,
+    type: [TeaType.Herbal],
+    ingredients:
+      'Butterfly pea flower',
+    caffeine: 0,
+    sealed: true,
+  },
+  {
+    img: cherryblossom,
+    name: 'Cherry Blossom',
+    brand: Brand.DavidsTea,
+    type: [TeaType.White, TeaType.Green],
+    ingredients:
+      'White tea, Green tea, Coconut rasps, Artificial cherry flavouring, Rose petal, Cherries',
+    caffeine: 2,
+    sealed: true,
+  },
+  {
+    img: guavacadabra,
+    name: 'Guava Cadabra',
+    brand: Brand.DavidsTea,
+    type: [TeaType.Herbal],
+    ingredients:
+      'Candied mango (mango, sugar), Apple, Hibiscus blossom, Elderberry, Guava crunchy (guava puree, concentrated apple puree with ascorbic acid, concentrated apple juice), Artificial (guava, mango) flavouring, Beetroot, Rosehip peel.',
+    caffeine: 0,
     sealed: false,
   },
 ]
