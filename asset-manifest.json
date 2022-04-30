@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tea-menu/static/css/main.31c0ba4c.css",
-    "main.js": "/tea-menu/static/js/main.bf98ac75.js",
+    "main.js": "/tea-menu/static/js/main.e544ad57.js",
     "static/js/787.c1112931.chunk.js": "/tea-menu/static/js/787.c1112931.chunk.js",
     "static/media/mug-time.gif": "/tea-menu/static/media/mug-time.8ce88be54c8040f5beaf.gif",
     "static/media/bloodorange.jpg": "/tea-menu/static/media/bloodorange.69f122d74d99226d8fd5.jpg",
@@ -29,18 +29,22 @@
     "static/media/vanillabean.jpg": "/tea-menu/static/media/vanillabean.a8b97b64f779a715944d.jpg",
     "static/media/irishbreakfast.jpg": "/tea-menu/static/media/irishbreakfast.490d1587606adc3614ab.jpg",
     "static/media/cloud.png": "/tea-menu/static/media/cloud.a25f26ad83d165001f2d.png",
+    "static/media/butterfly.jpg": "/tea-menu/static/media/butterfly.726ebafb02e5c7f0dafc.jpg",
     "static/media/peachygreen.jpg": "/tea-menu/static/media/peachygreen.4840e58e093a55dcf246.jpg",
+    "static/media/peppermint.jpg": "/tea-menu/static/media/peppermint.198791b10cbb67335fd8.jpg",
     "static/media/lychee.jpg": "/tea-menu/static/media/lychee.617c17c6e26dc50b0bd4.jpg",
     "static/media/genmaicha.jpg": "/tea-menu/static/media/genmaicha.6d97f3861b4df3402c1f.jpg",
+    "static/media/cherryblossom.jpg": "/tea-menu/static/media/cherryblossom.e06c29b16b2e237ae5cb.jpg",
+    "static/media/guavacadabra.jpg": "/tea-menu/static/media/guavacadabra.93d1a37ac205cb358d26.jpg",
     "static/media/mangoceylon.jpg": "/tea-menu/static/media/mangoceylon.e9f14b683c3bad53b065.jpg",
     "static/media/sleepytime.jpg": "/tea-menu/static/media/sleepytime.49c02ce23b44a27b662b.jpg",
     "index.html": "/tea-menu/index.html",
     "main.31c0ba4c.css.map": "/tea-menu/static/css/main.31c0ba4c.css.map",
-    "main.bf98ac75.js.map": "/tea-menu/static/js/main.bf98ac75.js.map",
+    "main.e544ad57.js.map": "/tea-menu/static/js/main.e544ad57.js.map",
     "787.c1112931.chunk.js.map": "/tea-menu/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31c0ba4c.css",
-    "static/js/main.bf98ac75.js"
+    "static/js/main.e544ad57.js"
   ]
 }
