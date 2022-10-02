@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/tea-menu/static/css/main.31c0ba4c.css",
-    "main.js": "/tea-menu/static/js/main.e544ad57.js",
+    "main.js": "/tea-menu/static/js/main.e9a1f245.js",
     "static/js/787.c1112931.chunk.js": "/tea-menu/static/js/787.c1112931.chunk.js",
     "static/media/mug-time.gif": "/tea-menu/static/media/mug-time.8ce88be54c8040f5beaf.gif",
-    "static/media/bloodorange.jpg": "/tea-menu/static/media/bloodorange.69f122d74d99226d8fd5.jpg",
     "static/media/guangzhou.jpg": "/tea-menu/static/media/guangzhou.3db5c5a58d799ef2058c.jpg",
     "static/media/pomegrateful.jpg": "/tea-menu/static/media/pomegrateful.0275a9fe0bfc4f3899c2.jpg",
     "static/media/mothers.jpg": "/tea-menu/static/media/mothers.8649fd3ef5aff1b825b2.jpg",
     "static/media/cardamom.jpg": "/tea-menu/static/media/cardamom.aabc0919baad7834ea90.jpg",
     "static/media/buddhasblend.jpg": "/tea-menu/static/media/buddhasblend.04624578a1f241338394.jpg",
-    "static/media/headachehalo.jpg": "/tea-menu/static/media/headachehalo.3112c1baddf41570b260.jpg",
     "static/media/pumpkinchai.jpg": "/tea-menu/static/media/pumpkinchai.d93df2d1ed254e15db2e.jpg",
     "static/media/mochachai.jpg": "/tea-menu/static/media/mochachai.481d879468d9d86870e8.jpg",
     "static/media/hazelnutchocolate.jpg": "/tea-menu/static/media/hazelnutchocolate.88e175d1f5213f8e0902.jpg",
@@ -18,14 +16,10 @@
     "static/media/santassecret.jpg": "/tea-menu/static/media/santassecret.a504c4a0f0b7a58fbf2d.jpg",
     "static/media/forevernuts.jpg": "/tea-menu/static/media/forevernuts.2df12f544b909f085ed3.jpg",
     "static/media/foreverfrosty.jpg": "/tea-menu/static/media/foreverfrosty.505a1f57c3ce72125177.jpg",
-    "static/media/applecider.jpg": "/tea-menu/static/media/applecider.896d74298f72bca7c52c.jpg",
     "static/media/dragonfruitaloe.jpg": "/tea-menu/static/media/dragonfruitaloe.b3b928aefb96b4951e36.jpg",
     "static/media/sleighride.jpg": "/tea-menu/static/media/sleighride.cf74a91c6642205c3d51.jpg",
     "static/media/jinglebellchai.jpg": "/tea-menu/static/media/jinglebellchai.5d9a59f521628ca3ae48.jpg",
-    "static/media/whitepumpkin.jpg": "/tea-menu/static/media/whitepumpkin.5ab46023c99350eb0c29.jpg",
     "static/media/pumpkincheesecake.jpg": "/tea-menu/static/media/pumpkincheesecake.0a6e7e848e3c5cc3113b.jpg",
-    "static/media/pugolden.jpg": "/tea-menu/static/media/pugolden.7976dbd55628dc90974d.jpg",
-    "static/media/jasmine.jpg": "/tea-menu/static/media/jasmine.57ce6684386e18b699e6.jpg",
     "static/media/vanillabean.jpg": "/tea-menu/static/media/vanillabean.a8b97b64f779a715944d.jpg",
     "static/media/irishbreakfast.jpg": "/tea-menu/static/media/irishbreakfast.490d1587606adc3614ab.jpg",
     "static/media/cloud.png": "/tea-menu/static/media/cloud.a25f26ad83d165001f2d.png",
@@ -40,11 +34,11 @@
     "static/media/sleepytime.jpg": "/tea-menu/static/media/sleepytime.49c02ce23b44a27b662b.jpg",
     "index.html": "/tea-menu/index.html",
     "main.31c0ba4c.css.map": "/tea-menu/static/css/main.31c0ba4c.css.map",
-    "main.e544ad57.js.map": "/tea-menu/static/js/main.e544ad57.js.map",
+    "main.e9a1f245.js.map": "/tea-menu/static/js/main.e9a1f245.js.map",
     "787.c1112931.chunk.js.map": "/tea-menu/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31c0ba4c.css",
-    "static/js/main.e544ad57.js"
+    "static/js/main.e9a1f245.js"
   ]
 }
