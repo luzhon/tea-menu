@@ -6,6 +6,7 @@ export type Tea = {
   ingredients: string
   caffeine: number
   sealed: boolean
+  outOfStock?: boolean
 }
 
 export enum TeaType {
@@ -47,9 +48,10 @@ export enum Brand {
 }
 
 export type Filters = {
-  type?: TeaType | undefined
-  brand?: Brand | undefined
-  caffeine?: number | undefined
-  sealed?: boolean | undefined
-  searchTerm?: string | undefined
+  type?: TeaType
+  brand?: Brand
+  caffeine?: number
+  sealed?: boolean
+  searchTerm?: string
+  outOfStock?: boolean
 }

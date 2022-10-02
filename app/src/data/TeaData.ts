@@ -1,6 +1,4 @@
 import { Tea, TeaType, Brand } from './Tea.types'
-import applecider from './../assets/applecider.jpg'
-import bloodorange from './../assets/bloodorange.jpg'
 import buddhasblend from './../assets/buddhasblend.jpg'
 import cardamom from './../assets/cardamom.jpg'
 import chocolatemacaroon from './../assets/chocolatemacaroon.jpg'
@@ -13,9 +11,7 @@ import genmaicha from './../assets/genmaicha.jpg'
 import greenteadecaf from './../assets/greenteadecaf.jpg'
 import guangzhou from './../assets/guangzhou.jpg'
 import hazelnutchocolate from './../assets/hazelnutchocolate.jpg'
-import headachehalo from './../assets/headachehalo.jpg'
 import irishbreakfast from './../assets/irishbreakfast.jpg'
-import jasmine from './../assets/jasmine.jpg'
 import jinglebellchai from './../assets/jinglebellchai.jpg'
 import lychee from './../assets/lychee.jpg'
 import mangoceylon from './../assets/mangoceylon.jpg'
@@ -27,16 +23,13 @@ import peachygreen from './../assets/peachygreen.jpg'
 import perfectpeach from './../assets/perfectpeach.jpg'
 import pomegranatewhite from './../assets/pomegranatewhite.jpg'
 import pomegrateful from './../assets/pomegrateful.jpg'
-import pugolden from './../assets/pugolden.jpg'
 import pumpkinchai from './../assets/pumpkinchai.jpg'
 import pumpkincheesecake from './../assets/pumpkincheesecake.jpg'
-import raspberrycream from './../assets/raspberrycream.jpg'
 import santassecret from './../assets/santassecret.jpg'
 import sleepytime from './../assets/sleepytime.jpg'
 import sleighride from './../assets/sleighride.jpg'
 import vanillabean from './../assets/vanillabean.jpg'
 import vanillachai from './../assets/vanillachai.jpg'
-import whitepumpkin from './../assets/whitepumpkin.jpg'
 import butterfly from './../assets/butterfly.jpg'
 import peppermint from './../assets/peppermint.jpg'
 import guavacadabra from './../assets/guavacadabra.jpg'
@@ -50,16 +43,6 @@ export const teaData: Tea[] = [
     type: [TeaType.Herbal],
     ingredients:
       'Apple, Almond, Cinnamon, Beetroot, Artificial sweet roasted almond flavouring.',
-    caffeine: 0,
-    sealed: false,
-  },
-  {
-    img: applecider,
-    name: 'Apple Cider',
-    brand: Brand.DavidsTea,
-    type: [TeaType.Herbal],
-    ingredients:
-      'Apple, Apple pomace (apple pomace, citric acid), Sweet blackberry leaves, Apple flavouring (artificial apple flavouring, concentrated apple juice), Artificial (vanilla, cream) flavouring',
     caffeine: 0,
     sealed: false,
   },
@@ -91,7 +74,8 @@ export const teaData: Tea[] = [
     ingredients:
       "Pu'erh tea, Apple, Cocoa peel, Artificial chocolate hazelnut flavouring, Chocolate (sugar, cocoa mass, low fat cocoa powder, cocoa butter, sunflower lecithin), Brittle pieces (sugar, hazelnut), Cocoa pieces, Hazelnut, Stevia extract",
     caffeine: 2,
-    sealed: false,
+    sealed: true,
+    outOfStock: true
   },
   {
     img: santassecret,
@@ -114,16 +98,6 @@ export const teaData: Tea[] = [
     sealed: true,
   },
   {
-    img: headachehalo,
-    name: 'Headache Halo',
-    brand: Brand.DavidsTea,
-    type: [TeaType.Rooibos],
-    ingredients:
-      'Rooibos, Nana mint, Lemongrass, Willow bark, Nettle leaves, Lavender, Passionflower, Vervain leaves, Rose petals, Mallow blossoms',
-    caffeine: 0,
-    sealed: false,
-  },
-  {
     img: chocolatemacaroon,
     name: 'Chocolate Macaroon',
     brand: Brand.DavidsTea,
@@ -131,7 +105,8 @@ export const teaData: Tea[] = [
     ingredients:
       'Black tea, Toasted coconut (coconut, sugar, dextrose, salt), Coconut, Pecans, Cacao nibs, Rock cane sugar, Natural chocolate flavouring',
     caffeine: 3,
-    sealed: false,
+    sealed: true,
+    outOfStock: true
   },
   {
     img: guangzhou,
@@ -201,26 +176,6 @@ export const teaData: Tea[] = [
     ingredients:
       '50% Elephant Approved black tea, Cinnamon, Lemon peel, Coriander seeds, Cardamom, Sugar (coconut sugar, cane sugar), Natural and artificial (vanilla, cardamom) flavouring',
     caffeine: 2,
-    sealed: true,
-  },
-  {
-    img: whitepumpkin,
-    name: 'White Pumpkin',
-    brand: Brand.DavidsTea,
-    type: [TeaType.White],
-    ingredients:
-      'Apple, Coconut rasp, White chocolate (sugar, cocoa butter, whole milk powder, sunflower lecithin), White tea, Carrot, Natural (pumpkin pie, white chocolate) flavouring, Bean peel, Pumpkin, Pumpkin seed, Sea buckthorn, Stevia extract',
-    caffeine: 1,
-    sealed: true,
-  },
-  {
-    img: bloodorange,
-    name: 'Blood Orange Boost',
-    brand: Brand.DavidsTea,
-    type: [TeaType.Green],
-    ingredients:
-      'Apple (apple, citric acid), Green tea, Hibiscus blossoms, Natural blood orange flavouring, Orange peel, Rosemary, Roasted chicory root, GABA green tea, Olive leaves, Stevia extract',
-    caffeine: 1,
     sealed: false,
   },
   {
@@ -232,16 +187,6 @@ export const teaData: Tea[] = [
       'Apple (apple, citric acid), Pineapple (pineapple, sugar), Hibiscus blossoms, White tea, Natural (pomegranate, cream) flavouring, Pomegranate seeds and blossoms, Rose petals, Stevia extract',
     caffeine: 1,
     sealed: true,
-  },
-  {
-    img: pugolden,
-    name: 'Pu Golden',
-    brand: Brand.Steepologie,
-    type: [TeaType.Puer],
-    ingredients:
-      'pu-erh tea + golden chrysanthemum flowers + tangerine mandarin extract',
-    caffeine: 2,
-    sealed: false,
   },
   {
     img: pumpkincheesecake,
@@ -261,15 +206,6 @@ export const teaData: Tea[] = [
     ingredients:
       'pu-erh tea + golden chrysanthemum flowers + tangerine mandarin extract',
     caffeine: 3,
-    sealed: false,
-  },
-  {
-    img: jasmine,
-    name: 'Jasmine in Bloom',
-    brand: Brand.Steepologie,
-    type: [TeaType.Green],
-    ingredients: 'green tea + jasmine blooms',
-    caffeine: 2,
     sealed: false,
   },
   {
@@ -402,16 +338,6 @@ export const teaData: Tea[] = [
     brand: Brand.Itoen,
     type: [TeaType.Green],
     ingredients: 'Roasted Rice, Green Tea',
-    caffeine: 1,
-    sealed: false,
-  },
-  {
-    img: raspberrycream,
-    name: 'Raspberry Cream',
-    brand: Brand.QueenMary,
-    type: [TeaType.Green],
-    ingredients:
-      'Queens selected green tea,  pineapple cubes, apple cubes, flavoring, freeze-dried whole raspberries, freeze-dried raspberry pieces, pink cornflower blossoms',
     caffeine: 1,
     sealed: false,
   },
